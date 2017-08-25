@@ -12,12 +12,12 @@ const int POT_UPPER = 1019;
 // NOTE Expr pedal seems to follow curve of format y = A*B^(-Dx) + C
 // These values were found by plugging in the max and min values of the
 // pedal, then solving for all values while tweaking B and D.
-// Padded raw max and min measured at [38, 320]
+// Padded raw max and min measured at [80, 250]
 // https://www.desmos.com/calculator/cv4xtfvs05
-const float EXPR_CURVE_A = 284.94;
-const float EXPR_CURVE_B = 2;
-const float EXPR_CURVE_C = 35.06;
-const float EXPR_CURVE_D = 6.6;
+const float EXPR_CURVE_A = 287.8;
+const float EXPR_CURVE_B = 1.2;
+const float EXPR_CURVE_C = -37.8;
+const float EXPR_CURVE_D = 4.9;
 const float EXPR_CURVE_DENOM = log(EXPR_CURVE_B) * EXPR_CURVE_D;
 
 const byte FS_BANK_CCS[NUM_BANKS][2] = {

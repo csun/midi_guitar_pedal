@@ -186,7 +186,8 @@ void updateToggleState(int i) {
 void sendControls() {
   updateFs(0);
   updateFs(1);
-  updateExpr();
+  // NOTE - Expression pedal too noisy. Disabled.
+  // updateExpr();
   updateKnob();
 
   MidiUSB.flush();
